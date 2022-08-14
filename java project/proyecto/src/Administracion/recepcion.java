@@ -15,11 +15,7 @@ public class recepcion extends habitaciones {
             System.out.println("Eliminar Cliente (3)");
             System.out.println("Cerrar el programa (4)");
             Integer entrada = opcion.nextInt();
-            
-            if(entrada > 4){
-                System.out.println("Esa no es una opcion valida, inteta de nuevo");
-                continue;
-            }else if(entrada == 1){
+            if(entrada == 1){
                 System.out.println("Sencilla (101): "+estado101.getDisponible());
                 System.out.println("Sencilla (102): "+estado102.getDisponible());
                 System.out.println("Sencilla (201): "+estado201.getDisponible());
@@ -85,6 +81,9 @@ public class recepcion extends habitaciones {
                         estado501.setDisponible(false);
                         System.out.println("El precio de la habitacion es de $"+tipo501.getValor());
                         break;
+                    }else{
+                        System.out.println("Esa no es una opcion valida");
+                        continue;
                     }
                 }
             }else if(entrada == 3){
@@ -132,11 +131,17 @@ public class recepcion extends habitaciones {
                         estado501.setDisponible(true);
                         System.out.println("Habitacion 501 Disponible");
                         break;
+                    }else{
+                        System.out.println("Esa no es una opcion valida");
+                        continue;
                     }
                 }
-            }else{
+            }else if(entrada == 4){
                 break;
-            } 
+            }else{
+                System.out.println("Esa no es una opcion valida, por favor intente de nuevo");
+                continue;
+            }
         }
     }
 }
