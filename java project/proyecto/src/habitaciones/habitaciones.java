@@ -50,6 +50,6 @@ public class habitaciones {
     // Habitacion 501
     protected static tipo_habitacion tipo501 = new tipo_habitacion(200, "Suite Precidencial");
     protected static estado_habitacion estado501 = new estado_habitacion(true, false);
-    protected static suite_presidencial equipamiento501 = new suite_presidencial(true, true, true, true);
+    protected static suite_precidencial equipamiento501 = new suite_precidencial(true, true, true, true);
 
 }
