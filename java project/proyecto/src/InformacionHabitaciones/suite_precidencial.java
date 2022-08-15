@@ -1,6 +1,6 @@
 package InformacionHabitaciones;
 
-// Abstraccion 
+
 public class suite_precidencial extends equipamiento_habitacion {
 
     private boolean servicio_24h;
@@ -12,7 +12,11 @@ public class suite_precidencial extends equipamiento_habitacion {
     
     }
     
-    public boolean getServicio24h(){
-        return servicio_24h;
+    public String getServicio24h(){
+        if(servicio_24h == true){
+            return "Tiene Servicio 24 horas";
+        }else{
+            return "No Tiene Servicio 24 horas";
+        }
     }
 }

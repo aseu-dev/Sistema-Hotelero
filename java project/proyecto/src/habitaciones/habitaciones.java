@@ -1,5 +1,6 @@
 package habitaciones;
 import InformacionHabitaciones.*;
+
 public class habitaciones {
     // Piso 1
     // Habitacion 101
@@ -50,4 +51,5 @@ public class habitaciones {
     protected static tipo_habitacion tipo501 = new tipo_habitacion(200, "Suite Precidencial");
     protected static estado_habitacion estado501 = new estado_habitacion(true, false);
     protected static suite_precidencial equipamiento501 = new suite_precidencial(true, true, true, true);
+
 }
