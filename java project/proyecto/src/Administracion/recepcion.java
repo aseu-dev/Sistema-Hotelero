@@ -15,7 +15,11 @@ public class recepcion extends habitaciones {
             System.out.println("Eliminar Cliente (3)");
             System.out.println("Cerrar el programa (4)");
             Integer entrada = opcion.nextInt();
-            if(entrada == 1){
+            
+            if(entrada > 4){
+                System.out.println("Esa no es una opcion valida, inteta de nuevo");
+                continue;
+            }else if(entrada == 1){
                 System.out.println("Sencilla (101): "+estado101.getDisponible());
                 System.out.println("Sencilla (102): "+estado102.getDisponible());
                 System.out.println("Sencilla (201): "+estado201.getDisponible());
@@ -33,57 +37,104 @@ public class recepcion extends habitaciones {
                     System.out.println("Cual habitacion desea seleccionar");
                     Integer habitacion = nuevo_cliente.nextInt();
                     if(habitacion == 101){
-                        estado101.setDisponible(false);
-                        System.out.println("El precio de la habitacion es de $"+tipo101.getValor());
-                        break;
+                        if(estado101.getDisponible() == "Disponible"){
+                            estado101.setDisponible(false);
+                            System.out.println("El precio de la habitacion es de $"+tipo101.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 102){
-                        estado102.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo102.getValor());
-                        break;
+                        if (estado102.getDisponible() == "Disponible"){
+                            estado102.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo102.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 201){
-                        estado201.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo201.getValor());
-                        break;
+                        if (estado201.getDisponible() == "Disponible"){
+                            estado201.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo201.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 202){
-                        estado202.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo202.getValor());
-                        break;
+                        if (estado202.getDisponible() == "Disponible"){
+                            estado202.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo202.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 301){
-                        estado301.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo301.getValor());
-                        break;
+                        if (estado301.getDisponible() == "Disponible"){
+                            estado301.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo301.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 302){
-                        estado302.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo302.getValor());
-                        break;
+                        if (estado302.getDisponible() == "Disponible"){
+                            estado302.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo302.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 303){
-                        estado303.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo303.getValor());
-                        break;
+                        if (estado303.getDisponible() == "Disponible"){
+                            estado303.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo303.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 401){
-                        estado401.setDisponible(false);
-                        System.out.println("Habitacion registrada correctamente");
-                        System.out.println("El precio de la habitacion es de $"+tipo401.getValor());
-                        break;
+                        if (estado401.getDisponible() == "Disponible"){
+                            estado401.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo401.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 402){
-                        System.out.println("Habitacion registrada correctamente");
-                        estado402.setDisponible(false);
-                        System.out.println("El precio de la habitacion es de $"+tipo402.getValor());
-                        break;
+                        if (estado402.getDisponible() == "Disponible"){
+                            estado402.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo402.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }else if(habitacion == 501){
-                        System.out.println("Habitacion registrada correctamente");
-                        estado501.setDisponible(false);
-                        System.out.println("El precio de la habitacion es de $"+tipo501.getValor());
-                        break;
-                    }else{
-                        System.out.println("Esa no es una opcion valida");
-                        continue;
+                        if (estado501.getDisponible() == "Disponible"){
+                            estado501.setDisponible(false);
+                            System.out.println("Habitacion registrada correctamente");
+                            System.out.println("El precio de la habitacion es de $"+tipo501.getValor());
+                            break;
+                        }else{
+                            System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
+                            continue;
+                        }
                     }
                 }
             }else if(entrada == 3){
@@ -131,17 +182,11 @@ public class recepcion extends habitaciones {
                         estado501.setDisponible(true);
                         System.out.println("Habitacion 501 Disponible");
                         break;
-                    }else{
-                        System.out.println("Esa no es una opcion valida");
-                        continue;
                     }
                 }
-            }else if(entrada == 4){
-                break;
             }else{
-                System.out.println("Esa no es una opcion valida, por favor intente de nuevo");
-                continue;
-            }
+                break;
+            } 
         }
     }
 }
