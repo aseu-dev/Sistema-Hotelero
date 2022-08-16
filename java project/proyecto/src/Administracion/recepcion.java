@@ -1,5 +1,5 @@
 package Administracion;
-import habitaciones.habitaciones;
+import registro_habitaciones.habitaciones;
 import java.util.Scanner;
 
 public class recepcion extends habitaciones {
@@ -49,11 +49,9 @@ public class recepcion extends habitaciones {
                     if(habitacion == 101){
                         if(estado101.getDisponible() == "Disponible"){
                             estado101.setDisponible(false);
-                            System.out.println("El precio de la habitacion es de $"+tipo101.getValor());
-                            System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento101.getMinibar());
-                            System.out.println(equipamiento101.getNevera());
-                            System.out.println(equipamiento101.getTelevisor());
+                            System.out.println("Habitacion registrada correctamente\nEl precio de la habitacion es de $"+tipo101.getValor()+"\nLas especificaciones de la habitacion son: ");
+                            System.out.println(equipamiento101.getEquipamiento());
+                            System.out.println(servicio101.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -63,11 +61,9 @@ public class recepcion extends habitaciones {
                         if (estado102.getDisponible() == "Disponible"){
                             estado102.setDisponible(false);
                             System.out.println("Habitacion registrada correctamente");
-                            System.out.println("El precio de la habitacion es de $"+tipo102.getValor());
-                            System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento102.getMinibar());
-                            System.out.println(equipamiento102.getNevera());
-                            System.out.println(equipamiento102.getTelevisor());
+                            System.out.println("Habitacion registrada correctamente\nEl precio de la habitacion es de $"+tipo102.getValor()+"\nLas especificaciones de la habitacion son: ");
+                            System.out.println(equipamiento102.getEquipamiento());
+                            System.out.println(servicio102.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -77,11 +73,9 @@ public class recepcion extends habitaciones {
                         if (estado201.getDisponible() == "Disponible"){
                             estado201.setDisponible(false);
                             System.out.println("Habitacion registrada correctamente");
-                            System.out.println("El precio de la habitacion es de $"+tipo201.getValor());
-                            System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento201.getMinibar());
-                            System.out.println(equipamiento201.getNevera());
-                            System.out.println(equipamiento201.getTelevisor());
+                            System.out.println("Habitacion registrada correctamente\nEl precio de la habitacion es de $"+tipo201.getValor()+"\nLas especificaciones de la habitacion son: ");
+                            System.out.println(equipamiento201.getEquipamiento());
+                            System.out.println(servicio201.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -90,12 +84,9 @@ public class recepcion extends habitaciones {
                     }else if(habitacion == 202){
                         if (estado202.getDisponible() == "Disponible"){
                             estado202.setDisponible(false);
-                            System.out.println("Habitacion registrada correctamente");
-                            System.out.println("El precio de la habitacion es de $"+tipo202.getValor());
-                            System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento202.getMinibar());
-                            System.out.println(equipamiento202.getNevera());
-                            System.out.println(equipamiento202.getTelevisor());
+                            System.out.println("Habitacion registrada correctamente\nEl precio de la habitacion es de $"+tipo202.getValor()+"\nLas especificaciones de la habitacion son: ");
+                            System.out.println(equipamiento202.getEquipamiento());
+                            System.out.println(servicio202.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -107,9 +98,8 @@ public class recepcion extends habitaciones {
                             System.out.println("Habitacion registrada correctamente");
                             System.out.println("El precio de la habitacion es de $"+tipo301.getValor());
                             System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento301.getMinibar());
-                            System.out.println(equipamiento301.getNevera());
-                            System.out.println(equipamiento301.getTelevisor());
+                            System.out.println(equipamiento301.getEquipamiento());
+                            System.out.println(servicio301.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -121,9 +111,8 @@ public class recepcion extends habitaciones {
                             System.out.println("Habitacion registrada correctamente");
                             System.out.println("El precio de la habitacion es de $"+tipo302.getValor());
                             System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento302.getMinibar());
-                            System.out.println(equipamiento302.getNevera());
-                            System.out.println(equipamiento302.getTelevisor());
+                            System.out.println(equipamiento302.getEquipamiento());
+                            System.out.println(servicio302.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -135,9 +124,8 @@ public class recepcion extends habitaciones {
                             System.out.println("Habitacion registrada correctamente");
                             System.out.println("El precio de la habitacion es de $"+tipo303.getValor());
                             System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento303.getMinibar());
-                            System.out.println(equipamiento303.getNevera());
-                            System.out.println(equipamiento303.getTelevisor());
+                            System.out.println(equipamiento303.getEquipamiento());
+                            System.out.println(servicio303.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -149,9 +137,8 @@ public class recepcion extends habitaciones {
                             System.out.println("Habitacion registrada correctamente");
                             System.out.println("El precio de la habitacion es de $"+tipo401.getValor());
                             System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento401.getMinibar());
-                            System.out.println(equipamiento401.getNevera());
-                            System.out.println(equipamiento401.getTelevisor());
+                            System.out.println(equipamiento401.getEquipamiento());
+                            System.out.println(servicio401.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -163,9 +150,8 @@ public class recepcion extends habitaciones {
                             System.out.println("Habitacion registrada correctamente");
                             System.out.println("El precio de la habitacion es de $"+tipo402.getValor());
                             System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento402.getMinibar());
-                            System.out.println(equipamiento402.getNevera());
-                            System.out.println(equipamiento402.getTelevisor());
+                            System.out.println(equipamiento402.getEquipamiento());
+                            System.out.println(servicio402.getServicios());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
@@ -177,10 +163,10 @@ public class recepcion extends habitaciones {
                             System.out.println("Habitacion registrada correctamente");
                             System.out.println("El precio de la habitacion es de $"+tipo501.getValor());
                             System.out.println("Las especificaciones de la habitacion son: ");
-                            System.out.println(equipamiento501.getMinibar());
-                            System.out.println(equipamiento501.getNevera());
-                            System.out.println(equipamiento501.getTelevisor());
-                            System.out.println(equipamiento501.getServicio24h());
+                            System.out.println(equipamiento501.getEquipamiento());
+                            System.out.println(servicio501.getServicios());
+                            System.out.println(equipamiento501.getPiscinaPrivada());
+                            System.out.println(servicio501.getServicioPrivado());
                             break;
                         }else{
                             System.out.println("Esa habitacion no esta disponible, por favor intenta otra");
